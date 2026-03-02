@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Meta Tags -->
+    <title>Healtone Veteriner Kliniği | Ankara 7/24 Acil Veteriner</title>
+    <meta name="description" content="Ankara Çankaya'da 7/24 açık Healtone Veteriner Kliniği. Kedi, köpek, kuş ve egzotik hayvanlarınız için uzman hekim kadrosuyla modern ve şefkatli tedavi.">
+    <meta name="keywords" content="Ankara veteriner, Çankaya veteriner, 7/24 veteriner ankara, kuş veterineri ankara, acil veteriner, healtone veteriner, Göknil Hanım veteriner, Halil İbrahim Bey veteriner, kedi köpek kısırlaştırma">
+    <meta name="author" content="Unal Partnerlik">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Healtone Veteriner Kliniği | Ankara 7/24 Açık">
+    <meta property="og:description" content="Can dostlarınız için Ankara'da 7/24 kesintisiz, şefkatli ve profesyonel veteriner hizmeti.">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:url" content="https://www.healtonevet.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="logo.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        // Logodan alınan renk paleti
+                        brand: {
+                            red: '#E12A32',      // Logodaki artı işareti
+                            lightBlue: '#B5DFE5', // Logodaki açık mavi
+                            teal: '#3AB2B8',      // Logodaki koyu turkuaz
+                            dark: '#1F2937',      // Metinler için
+                            soft: '#F3F9FA'       // Arka planlar için
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles & Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #3AB2B8; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #2a8a8f; }
+        
+        .hero-pattern {
+            background-image: linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1596272875729-ed2ff7d6fa9c?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3AB2B8, #E12A32);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-dark antialiased bg-white overflow-x-hidden">
+
+    <!-- Top Info Bar -->
+    <div class="bg-brand-teal text-white text-xs md:text-sm py-2 px-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex space-x-4">
+                <span class="hidden md:inline"><i class="fa-solid fa-location-dot mr-1"></i> Çankaya, Ankara</span>
+                <span><i class="fa-regular fa-clock mr-1"></i> 7/24 Açık</span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://www.instagram.com/healtonevet/" target="_blank" class="hover:text-brand-lightBlue transition"><i class="fa-brands fa-instagram text-lg"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="logo.jpg" alt="Healtone Veteriner Kliniği Logo" class="h-12 w-12 object-contain rounded-lg shadow-sm group-hover:scale-105 transition-transform duration-300">
+                <div class="flex flex-col">
+                    <span class="font-heading font-bold text-xl leading-none text-brand-dark">Healtone</span>
+                    <span class="text-xs text-brand-teal font-medium tracking-wider uppercase mt-1">Veteriner Kliniği</span>
+                </div>
+            </a>
+            
+            <div class="hidden lg:flex space-x-8 items-center font-medium">
+                <a href="#hakkimizda" class="text-gray-600 hover:text-brand-teal transition">Hakkımızda</a>
+                <a href="#hizmetler" class="text-gray-600 hover:text-brand-teal transition">Hizmetlerimiz</a>
+                <a href="#yorumlar" class="text-gray-600 hover:text-brand-teal transition">Hasta Yorumları</a>
+                <a href="#iletisim" class="text-gray-600 hover:text-brand-teal transition">İletişim</a>
+            </div>
+
+            <div class="hidden md:flex">
+                <a href="tel:+905059148443" class="bg-brand-red text-white px-6 py-2.5 rounded-full font-semibold hover:bg-red-700 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 animate-pulse">
+                    <i class="fa-solid fa-phone-volume"></i> Acil: 0505 914 84 43
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="lg:hidden text-brand-dark text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="#hakkimizda" class="text-gray-600 font-medium" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Hakkımızda</a>
+                <a href="#hizmetler" class="text-gray-600 font-medium" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Hizmetlerimiz</a>
+                <a href="#yorumlar" class="text-gray-600 font-medium" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Hasta Yorumları</a>
+                <a href="#iletisim" class="text-gray-600 font-medium" onclick="document.getElementById('mobile-menu').classList.add('hidden')">İletişim</a>
+                <a href="tel:+905059148443" class="bg-brand-red text-white px-4 py-3 rounded-xl font-semibold text-center flex justify-center items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Hemen Ara
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern pt-20 pb-32 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-3/5" data-aos="fade-right" data-aos-duration="1000">
+                <div class="inline-block bg-brand-lightBlue/30 text-brand-teal font-semibold px-4 py-1.5 rounded-full text-sm mb-6 border border-brand-teal/20">
+                    <i class="fa-solid fa-heart-pulse mr-2"></i> Ankara Çankaya - 7/24 Hizmetinizde
+                </div>
+                <h1 class="text-5xl md:text-6xl font-heading font-extrabold leading-tight mb-6">
+                    Onlar Sizin İçin Aile, <br>
+                    <span class="gradient-text">Bizim İçin Can.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-xl leading-relaxed">
+                    Kedi, köpek, kuş ve tüm egzotik dostlarımız için uzman kadromuzla yanınızdayız. Modern teşhis, hızlı müdahale ve sonsuz şefkat Healtone Veteriner Kliniği'nde.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/905059148443" target="_blank" class="bg-brand-teal text-white px-8 py-4 rounded-xl font-semibold text-center hover:bg-[#2e9398] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp'tan Yazın
+                    </a>
+                    <a href="tel:+905059148443" class="bg-white text-brand-dark border-2 border-gray-200 px-8 py-4 rounded-xl font-semibold text-center hover:border-brand-red hover:text-brand-red hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone"></i> 0505 914 84 43
+                    </a>
+                </div>
+                <div class="mt-8 flex items-center gap-4 text-sm text-gray-500 font-medium">
+                    <div class="flex -space-x-2">
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop" alt="Mutlu Hasta Sahibi">
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&auto=format&fit=crop" alt="Mutlu Hasta Sahibi">
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-brand-lightBlue flex items-center justify-center text-brand-teal font-bold text-xs">4.8+</div>
+                    </div>
+                    <p>Google'da <span class="font-bold text-brand-dark">4.8 Yıldız</span> (20+ Mutlu Yorum)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Features -->
+    <section class="relative z-20 -mt-16 container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl p-6 shadow-soft border border-gray-100 flex items-start gap-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-red-50 text-brand-red p-4 rounded-xl text-2xl">
+                    <i class="fa-solid fa-truck-medical"></i>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-lg mb-1">7/24 Acil Müdahale</h3>
+                    <p class="text-gray-500 text-sm">Gecenin bir yarısı da olsa dostlarınız için kliniğimiz daima açık.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-soft border border-gray-100 flex items-start gap-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-blue-50 text-brand-teal p-4 rounded-xl text-2xl">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-lg mb-1">Uzman Hekim Kadrosu</h3>
+                    <p class="text-gray-500 text-sm">Göknil Hanım ve Halil İbrahim Bey öncülüğünde şefkatli tedavi.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-soft border border-gray-100 flex items-start gap-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="bg-green-50 text-green-600 p-4 rounded-xl text-2xl">
+                    <i class="fa-solid fa-dove"></i>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-lg mb-1">Egzotik & Kuş Uzmanlığı</h3>
+                    <p class="text-gray-500 text-sm">Sadece kedi köpek değil, kuşlar ve egzotik hayvanlar için de özel bakım.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="hakkimizda" class="py-24 bg-brand-soft overflow-hidden mt-16">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
+            <div class="w-full lg:w-1/2 relative" data-aos="fade-right">
+                <div class="absolute -top-6 -left-6 w-24 h-24 bg-brand-lightBlue rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+                <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-red rounded-full mix-blend-multiply filter blur-xl opacity-20"></div>
+                <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?q=80&w=2070&auto=format&fit=crop" alt="Veteriner Muayene" class="rounded-3xl shadow-2xl relative z-10 w-full h-[400px] object-cover">
+                
+                <!-- Floating Badge -->
+                <div class="absolute -bottom-10 right-10 bg-white p-6 rounded-2xl shadow-soft z-20 flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
+                    <img src="logo.jpg" alt="Logo Icon" class="w-12 h-12 rounded-lg object-contain">
+                    <div>
+                        <div class="font-bold text-xl text-brand-dark">Kesin Teşhis</div>
+                        <div class="text-sm text-brand-teal font-medium">Modern Laboratuvar</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-full lg:w-1/2" data-aos="fade-left">
+                <h4 class="text-brand-teal font-bold tracking-widest uppercase text-sm mb-3">Hakkımızda</h4>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-brand-dark">Minik Dostlarınız İçin <br>Kocaman Bir Kalp.</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Healtone Veteriner Kliniği olarak Ankara Çankaya'da, alanında uzman hekimlerimiz <strong>Göknil Hanım</strong> ve <strong>Halil İbrahim Bey</strong> liderliğinde can dostlarınıza hizmet veriyoruz.
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    Bizim için her hasta, kendi ailemizin bir ferdi gibidir. Stresli minik dostlarımızı bile kendi ayaklarıyla koşarak gelecekleri kadar samimi, sıcak ve güvenli bir ortamda tedavi ediyoruz. Kuşlardan kedi ve köpeklere kadar geniş bir yelpazede, en doğru teşhisi koyup en hızlı tedaviyi uygulamak temel prensibimizdir.
+                </p>
+                
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center gap-3 text-gray-700 font-medium">
+                        <i class="fa-solid fa-circle-check text-brand-teal text-xl"></i> Sıfır Stres Yaklaşımı
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-700 font-medium">
+                        <i class="fa-solid fa-circle-check text-brand-teal text-xl"></i> Hızlı ve Doğru Teşhis
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-700 font-medium">
+                        <i class="fa-solid fa-circle-check text-brand-teal text-xl"></i> Gelişmiş Yoğun Bakım ve Cerrahi
+                    </li>
+                </ul>
+
+                <a href="#iletisim" class="inline-flex items-center gap-2 text-brand-teal font-bold hover:text-brand-dark transition-colors">
+                    Klinik Adresimizi Görün <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="hizmetler" class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <h4 class="text-brand-red font-bold tracking-widest uppercase text-sm mb-3">Hizmetlerimiz</h4>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Modern Tıp, Kusursuz İlgi</h2>
+                <p class="text-gray-500">Dostlarınızın sağlığı için ihtiyacınız olan tüm veteriner hekimlik hizmetlerini tek bir çatı altında, en son teknolojiyle sunuyoruz.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-soft hover:-translate-y-2 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-brand-soft rounded-xl flex items-center justify-center text-brand-teal text-3xl mb-6 group-hover:bg-brand-teal group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-3">Genel Muayene</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Düzenli aşı takibi, parazit kontrolü ve detaylı fiziksel muayene ile hastalıkları oluşmadan önlüyoruz.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-soft hover:-translate-y-2 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-red-50 rounded-xl flex items-center justify-center text-brand-red text-3xl mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-scalpel-line-dashed"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-3">Cerrahi & Kısırlaştırma</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Steril ameliyathanemizde güvenli anestezi ile kısırlaştırma ve yumuşak doku operasyonları.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-soft hover:-translate-y-2 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-brand-soft rounded-xl flex items-center justify-center text-brand-teal text-3xl mb-6 group-hover:bg-brand-teal group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-3">Laboratuvar</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Hemogram, biyokimya ve röntgen cihazlarımızla anında, klinik içi hızlı ve kesin teşhis imkanı.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-soft hover:-translate-y-2 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-green-50 rounded-xl flex items-center justify-center text-green-600 text-3xl mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-crow"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-3">Kuş & Egzotik</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Muhabbet kuşu, papağan, tavşan gibi egzotik dostlarımız için özel uzmanlık ve özel tedavi protokolleri.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (Sosyal Kanıt) -->
+    <section id="yorumlar" class="py-24 bg-brand-dark text-white relative overflow-hidden">
+        <!-- Background Decor -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-teal rounded-full mix-blend-screen filter blur-3xl opacity-20"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-red rounded-full mix-blend-screen filter blur-3xl opacity-10"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <div class="flex justify-center mb-4">
+                    <i class="fa-brands fa-google text-4xl text-white"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Hasta Sahiplerimiz Ne Diyor?</h2>
+                <div class="flex items-center justify-center gap-2 text-yellow-400 text-xl mb-2">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="text-gray-400">Google Haritalar üzerinden doğrulanmış 4.8 yıldızlı değerlendirmelerimiz.</p>
+            </div>
+
+            <!-- CSS Grid for masonry-like look -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Review 1 -->
+                <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center font-bold text-brand-teal text-xl">E</div>
+                        <div>
+                            <h4 class="font-bold">Elif ycn</h4>
+                            <div class="text-yellow-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm italic">"Harrrriiikkaaaa.. sıcacık bir yer, çok samimiler. Köpeğimin hiçbir veterinerde bu kadar rahat olacağını düşünemezdim kendi ayaklarıyla koşarak geliyor sıfır stres... İyi ki tanıştık Healtoneee 💕"</p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center font-bold text-brand-teal text-xl">Z</div>
+                        <div>
+                            <h4 class="font-bold">Ziya Günaydın</h4>
+                            <div class="text-yellow-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm italic">"3 yaşında pomeranian cinsi köpeğimi kısırlaştırdım. Gayet memnun kaldık. Köpeğim 10 günde iyileşti. Halil İbrahim Beye ve Göknil Hanıma gözünüz kapalı güvenebilirsiniz. Her şey için teşekkürler 🙏"</p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center font-bold text-brand-teal text-xl">B</div>
+                        <div>
+                            <h4 class="font-bold">Beyza Ünlütürk</h4>
+                            <div class="text-yellow-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm italic">"Kuşum Limon Halil Bey sayesinde iyileşti, Ankara’da kuş konusunda güvenebileceğiniz tek adres.."</p>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center font-bold text-brand-teal text-xl">Ö</div>
+                        <div>
+                            <h4 class="font-bold">ÖZLEM CENGİZ</h4>
+                            <div class="text-yellow-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm italic">"Gözünüz kapalı emanet edebileceğiniz bir yer köpeğimizi kaybetmek üzereyken teşhisi çok hızlı koyup tedavisini yapan mükemmel ekip teşekkürler."</p>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center font-bold text-brand-teal text-xl">Ü</div>
+                        <div>
+                            <h4 class="font-bold">ünal aydın</h4>
+                            <div class="text-yellow-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm italic">"Göknil hanım ilgili alakadar ve bilgili bir hekim. Tedavi konusunda bir kaç kliniğine gittim çözemedi. Göknil hanım sorunu tek seferde çözdü. Teşekkürler Göknil hanım."</p>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center font-bold text-brand-teal text-xl">Ş</div>
+                        <div>
+                            <h4 class="font-bold">Şule Şenel</h4>
+                            <div class="text-yellow-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm italic">"Kapısından geçerken solunum sıkıntısı olan kuşum nedeniyle sadece danışmak için uğradığım klinikte Göknil Hanım’ın güleryüzlü yakın ilgisi harikaydı."</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="iletisim" class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100" data-aos="fade-up">
+                
+                <!-- Contact Info -->
+                <div class="w-full lg:w-1/3 bg-brand-teal p-10 lg:p-12 text-white flex flex-col justify-center">
+                    <h2 class="text-3xl font-heading font-bold mb-8">İletişime Geçin</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Klinik Adresi</h4>
+                                <p class="text-white/80 text-sm leading-relaxed">Barbaros Mahallesi Tahran Caddesi, Billur Sk. No:25 D:B, 06680 Çankaya/Ankara</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Acil & Randevu</h4>
+                                <a href="tel:+905059148443" class="text-white/80 text-lg hover:text-white font-semibold transition">0505 914 84 43</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Çalışma Saatleri</h4>
+                                <p class="text-white/80 text-sm font-semibold">Haftanın 7 Günü / 24 Saat Açık</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 pt-8 border-t border-white/20">
+                        <p class="mb-4 font-medium">Bizi Takip Edin</p>
+                        <a href="https://www.instagram.com/healtonevet/" target="_blank" class="inline-flex items-center justify-center w-12 h-12 bg-white text-brand-teal rounded-full hover:bg-brand-red hover:text-white transition-colors">
+                            <i class="fa-brands fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="w-full lg:w-2/3 h-[400px] lg:h-auto min-h-[500px]">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d3060.7516886362544!2d32.86241971165887!3d39.89966778673751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f005d5c0b1f%3A0xb3fc4cb8ce0f2eb1!2sBarbaros%2C%20Tahran%20Cd.%20No%3A25%20D%3AB%2C%2006680%20%C3%87ankaya%2FAnkara!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 pb-24 border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center md:text-left">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <img src="logo.jpg" alt="Logo" class="w-10 h-10 rounded bg-white p-1">
+                    <span class="text-white font-heading font-bold text-xl">Healtone Veteriner Kliniği</span>
+                </div>
+                <div>
+                    <p>&copy; 2024 Healtone Veteriner Kliniği. Tüm Hakları Saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Floating WhatsApp Button (Bottom Right) -->
+    <a href="https://wa.me/905059148443" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 animate-bounce" style="animation-duration: 2s;">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- CUSTOM UNAL PARTNERLİK DEMO BADGE (Bottom Left) -->
+    <div class="fixed bottom-6 left-6 z-50 bg-[#1A1F2A] rounded-2xl p-2.5 flex items-center gap-3 shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-gray-700/50 hover:bg-[#232936] transition-colors cursor-default">
+        <div class="bg-[#151922] p-2 rounded-xl border border-gray-800 flex items-center justify-center">
+            <!-- Logonun kodu unal.jpg olarak ayarlandı -->
+            <img src="unal.jpg" alt="Unal Partnerlik" class="w-10 h-10 object-contain rounded">
+        </div>
+        <div class="flex flex-col pr-2">
+            <span class="text-[#FBB03B] font-bold text-sm tracking-wide leading-tight font-heading">UNAL PARTNERLİK</span>
+            <span class="text-white font-extrabold text-[13px] tracking-wide leading-tight font-heading">DEMO WEBSİTESİDİR</span>
+        </div>
+    </div>
+
+    <!-- AOS Animation Initialization Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // Animasyonlar scroll edildikçe sadece bir kere çalışsın
+            offset: 100, // Sayfada ne kadar aşağı inilince animasyon başlasın
+        });
+    </script>
+</body>
+</html>
